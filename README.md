@@ -1,13 +1,12 @@
 # Grocery Dataset
+Se esta utilizando el repositorio mostrado en el articulo de vision de imagenes para tiendas, este repositorio es libre y se ha utilizado en diferentes proyectos abieros.
 
-This repository contains annotation files and links for downloading images for the Grocery Dataset.
+este DataSet de imagenes comupuesto por:
+* imagenes recolactadas de 40 tiendas con 4 camaras,
+* mas de 10 categorias de productos
+* creado en Primavera del 2014  - Idea Teknoloji, Istanbul, Turkey.
+la informacion se encuentra en los siguientes links:
 
-The Grocery Dataset is an image dataset:
-* Collected from ~40 groceries, with 4 cameras,
-* With 10 product categories,
-* Created Spring 2014 - Idea Teknoloji, Istanbul, Turkey.
-
-The dataset is available for research only, not for commercial use.
 
 ## Download links
 Here are [part1](https://github.com/gulvarol/grocerydataset/releases/download/1.0/GroceryDataset_part1.tar.gz) and [part2](https://github.com/gulvarol/grocerydataset/releases/download/1.0/GroceryDataset_part2.tar.gz) for downloading the image files. The total disk space is around 3GB. You can equally find these links under the releases of this repository. 
@@ -15,7 +14,7 @@ Here are [part1](https://github.com/gulvarol/grocerydataset/releases/download/1.
 ## Organization of the folders
 
 ### ShelfImages
-This folder contains 354 grocery images.
+este archivo contiene 354 imagenes de articulos
 
 The naming is as follows:
 ```
@@ -29,7 +28,7 @@ The naming is as follows:
 ```
 	
 ### ProductImages
-This folder contains images from 10 different product categories numbered from 1-10. Each category has a separate directory.
+Esta carpeta contiene imágenes de 10 categorías de productos diferentes, numeradas del 1 al 10. Cada categoría tiene un directorio independiente
 
 The naming is as follows:
 ```
@@ -42,12 +41,12 @@ The naming is as follows:
 		
 ### BrandImages
 
-This folder contains the cropped versions of the ProductImages directory. The images are cropped so that only the brand logo remains.
+Esta carpeta contiene las versiones recortadas del directorio ProductImages. Las imágenes se recortan para que solo se conserve el logotipo de la marca.
 
 
 ### ProductImagesFromShelves
 
-This folder contains product images cropped from shelf images. They are divided into 10 product categories plus one negative category where the products not belonging to any of the 10 classes are gathered.
+Esta carpeta contiene imágenes de productos recortadas de imágenes de estantería. Se dividen en 10 categorías de productos, más una categoría negativa donde se agrupan los productos que no pertenecen a ninguna de las 10 clases.
 
 The naming is as follows:
 ```
@@ -61,13 +60,13 @@ The naming is as follows:
 ```
 
 ### BrandImagesFromShelves
-This folder contains the cropped versions of the ProductImagesFromShelves directory. The images are cropped so that only the brand logo remains.
+Esta carpeta contiene las versiones recortadas del directorio ProductImagesFromShelves. Las imágenes se recortan para que solo se conserve el logotipo de la marca.
 
 *******************************
 ## Annotation files
 
 ### annotation.txt
-This file summarizes the annotation information of the shelf images into one text file. Each row explains one shelf image.
+Este archivo resume la información de anotación de las imágenes de los estantes en un solo archivo de texto. Cada fila explica una imagen de los estantes.
 
 The format of one line is as follows:
 
@@ -84,7 +83,7 @@ The format of one line is as follows:
 ```
 
 ### subset.txt
-This file lists the names of the image files used for training and testing. It is a subset of the BrandImages and BrandImagesFromShelves contents.
+Este archivo enumera los nombres de los archivos de imagen utilizados para el entrenamiento y las pruebas. Es un subconjunto del contenido de BrandImages y BrandImagesFromShelves.
 
 ## Citation
 If you use this dataset, please cite the following:
